@@ -94,11 +94,11 @@ button:hover {
     }
 }
 footer {
-    background-color: #00274d;  /* Cor de fundo do rodapé */
-    color: white;               /* Cor do texto */
-    text-align: center;         /* Alinha o texto ao centro */
-    padding: 10px 0;            /* Espaçamento interno */
-    position: fixed;            /* Fixa o rodapé na parte inferior da tela */
-    bottom: 0;                  /* Fixa no fundo da página */
-    width: 100%;                /* Faz com que o rodapé ocupe toda a largura */
+    background-color: #00274d;  
+    color: white;               
+    text-align: center;         
+    padding: 10px 0;            
+    position: fixed;            
+    bottom: 0;                  
+    width: 100%;                
 }

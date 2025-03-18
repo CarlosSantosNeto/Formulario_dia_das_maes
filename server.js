@@ -47,7 +47,8 @@ app.post("/salvar", (req, res) => {
             const queryResposta = `INSERT INTO respostas_pergunta_milhoes (cliente_id, resposta) 
                                    VALUES (?, ?)`;
 
-            db.run(queryResposta, [clienteId, pergunta], function(err) {
+                                   
+                                   db.run(queryResposta, [clienteId, pergunta], function(err) {
                 if (err) {
                     console.error("Erro ao cadastrar resposta:", err);
                     return res.status(500).json({ message: "Erro ao cadastrar resposta" });
