@@ -150,15 +150,15 @@ document.querySelector("form").addEventListener("submit", async (event) => {
         data_compra: document.querySelector("#data_compra").value,
     };
 
-    const resposta = document.querySelector("#pergunta").value;
+    const pergunta = document.querySelector("#pergunta").value;  // Correção: 'pergunta' ao invés de 'resposta'
 
-    // Verifique no console os dados antes de enviar
+    
     console.log("Cliente:", cliente);
     console.log("Nota Fiscal:", notaFiscal);
-    console.log("Resposta:", resposta);
+    console.log("Pergunta:", pergunta);  
 
     // Enviando os dados para o servidor
-    const dados = { cliente, notaFiscal, resposta };
+    const dados = { cliente, notaFiscal, pergunta };
 
     try {
         const response = await fetch("http://localhost:3000/salvar", {
